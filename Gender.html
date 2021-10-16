@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Get value of selectd
+            radio button
+        </title>
+    </head>
+    <body>
+        <form>
+            <p>
+                select a radio button and click on submit.
+            </p>
+            
+        <h1></h1>
+        <input type ="radio" name="gender" value="Male">Male <br>
+        <input type="radio"  name="gender" value="Female">Female <br>
+        <input type="radio"  name="gender" value="Other">Other <br>
+
+        <br>
+
+        <
+        </form>
+        <script>
+            function  myFunction(){
+                let gender=document.forms[0];
+                let txt="";
+                let i;
+
+                for(i=0; i < gender.length; i++)
+                {
+                    if (gender[i].checked)
+                    {
+                        txt = txt + gender[i].value + "";
+                    }
+                }
+                document.getElementById("results").value="your selected gernder is:" + txt;
+            }
+        </script>
+    </body>
+</html>
